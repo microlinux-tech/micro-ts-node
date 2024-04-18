@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "sourceMap": true,
+    "lib": ["esnext", "dom"],
+    "outDir": "build",
+    "baseUrl": "./src",
+    "incremental": true,
+    "paths": {
+      "@/*": ["*"],
+      "@config/*": ["config/*"],
+      "@core/*" : ["core/*"],
+      "@services/*": ["core/services/*"],
+      "@controllers/*": ["core/controllers/*"],
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}
