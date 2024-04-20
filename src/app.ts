@@ -30,7 +30,7 @@ class App {
       .then(() => {
         logger.info(`Connection is ready!, This is ${name}`);
       })
-      .catch((err) => logger.info(err.message));
+      .catch((err) => logger.error(err.message));
 
     mongoose.connection.on("disconnected", () => {
       logger.info(`Mongoose connection is disconnected.`);

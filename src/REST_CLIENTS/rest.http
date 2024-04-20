@@ -1,5 +1,5 @@
 ### Register Route
-POST http://localhost:8000/api/v1/user
+Get http://localhost:8000/api/v1/user
 Content-Type: application/json
 
 {

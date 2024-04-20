@@ -4,4 +4,9 @@ import { Body, Controller, Get, Param, Post } from "routing-controllers";
 import Container from "typedi";
 
 @Controller()
-export class UserController {}
+export class UserController {
+  @Get("/user")
+  getRequest() {
+    return "Work!";
+  }
+}
